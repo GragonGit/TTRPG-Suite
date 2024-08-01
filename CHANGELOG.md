@@ -4,7 +4,7 @@ Welcome to the Changelog. The versioning works as follows:
 - `Y` is for changes to existing features
 - `Z` is for bug fixes and minor changes
 
-Changes in the repository not influencing the actual application e.g. Issue Templates do not require a version change
+Changes in the repository not influencing the actual application e.g. Issue Templates do not require a version change.
 
 ---
 
