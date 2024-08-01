@@ -6,6 +6,7 @@ Welcome to the Changelog. The versioning works as follows:
 
 Changes in the repository not influencing the actual application e.g. Issue Templates do not require a version change.
 
+Test Change
 ---
 
 **You reached the bottom of the changelog. Go get yourself a cookie. 🍪**
