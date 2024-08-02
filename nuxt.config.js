@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     }
   },
   alias: {
-    "@": resolve(__dirname, "/")
+    "assets": "/<srcDir>/assets"
   },
   compatibilityDate: '2024-08-02',
   css: ["~/assets/styles.sass"],
