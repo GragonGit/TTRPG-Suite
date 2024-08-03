@@ -6,6 +6,11 @@ Welcome to the Changelog. The versioning works as follows:
 
 Changes in the repository not influencing the actual application e.g. Issue Templates do not require a version change.
 
+## 0.3.0 - Theme Change POC
+- Added Theme Change POC
+
+Added a proof of concept for changing the theme "base" and "accent". Basically separating changing between light and dark mode and the accent color of the app. There is no UI. This is just the core functionality. 
+
 ## 0.2.0 - Added Modules
 - Added i18n Module - https://nuxt.com/modules/i18n
 - Added VueUse Module - https://nuxt.com/modules/vueuse
