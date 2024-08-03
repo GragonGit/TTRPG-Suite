@@ -2,7 +2,10 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: "TTRPG Suite"
+      title: "TTRPG Suite",
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      ],
     }
   },
   compatibilityDate: '2024-08-02',
