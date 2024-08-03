@@ -6,6 +6,12 @@ Welcome to the Changelog. The versioning works as follows:
 
 Changes in the repository not influencing the actual application e.g. Issue Templates do not require a version change.
 
+## 0.2.0 - Added Modules
+- Added i18n Module - https://nuxt.com/modules/i18n
+- Added VueUse Module - https://nuxt.com/modules/vueuse
+
+Two modules that will I likely use a lot. i18n is self-explanatory and VueUse seems to streamline a lot of useful things. I would have added Supabase here as well but it needs further research.
+
 ## 0.1.0 - Setup Nuxt
 - Added Nuxt and basic config settings
 - Added SASS
