@@ -9,7 +9,10 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-08-02',
   css: ["~/assets/styles.sass"],
   devtools: { enabled: true },
-  modules: ["@nuxtjs/i18n"],
+  modules: [
+    "@nuxtjs/i18n",
+    '@vueuse/nuxt',
+  ],
   i18n: {
     vueI18n: './assets/i18n.config.ts'
   }
