@@ -3,6 +3,13 @@
 @use './themes/baseIndex'
 @import 'https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap'
 
+@mixin text($font-size, $line-height)
+  font-size: $font-size
+  line-height: $line-height
+  text-wrap: balance
+
+  margin: 0rem
+
 body
   margin: 0
   min-height: 100vh
@@ -12,47 +19,40 @@ body
 
   font-family: Rubik, Helvetica Neue, Helvetica, Arial, sans-serif
 
-p, a
-  font-size: 1.25rem
-  line-height: 2rem
-  text-decoration: none
+p
+  @include text(1.25rem, 2rem)
 
+a
+  @include text(1.25rem, 2rem)
+  text-decoration: none
   color: var(--text-1)
 
-a:hover
-  text-decoration: underline
+  &:hover
+    text-decoration: underline
 
 h1
-  font-size: 6rem
-  line-height: 6rem
+  @include text(6rem, 6rem)
 
 h2
-  font-size: 4rem
-  line-height: 6rem // TODO Check proper spacing
+  @include text(4rem, 6rem) // TODO Check proper spacing
 
 // TODO Values not final and tested
 h3
-  font-size: 3rem
-  line-height: 6rem
+  @include text(3rem, 6rem)
 
 // TODO Values not final and tested
 h4
-  font-size: 3rem
-  line-height: 6rem
+  @include text(2rem, 6rem)
 
 // TODO Values not final and tested
 h5
-  font-size: 2rem
-  line-height: 6rem
+  @include text(1rem, 6rem)
 
 // TODO Values not final and tested
 h6
-  font-size: 1rem
-  line-height: 6rem
+  @include text(0.5rem, 6rem)
 
 h1, h2, h3, h4, h5, h6
-  margin: 0rem
-
   span
     background-clip: text
     background-color: var(--accent-1)
