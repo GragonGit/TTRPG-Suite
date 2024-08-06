@@ -6,6 +6,16 @@ Welcome to the Changelog. The versioning works as follows:
 
 Changes in the repository not influencing the actual application e.g. Issue Templates do not require a version change.
 
+## 0.5.0 - I18n implementation
+- Implemented i18n module
+- Added English translation
+- Added German translation
+- Updated dependencies
+
+Translation are now implemented properly. No more hardcoded text. Similar to theming the functionality is there but no UI. So no, you cannot change the language to German right now.
+
+P.S. Can I say that I'm proud of how it was implemented? The fact that these are typescript files and not json files makes this so much more bearable. Additionally, I now know instantly whether I missed a translation.
+
 ## 0.4.0 - Account creation
 - Added Supabase Module - https://nuxt.com/modules/supabase
 - Updated theme logic and variables
