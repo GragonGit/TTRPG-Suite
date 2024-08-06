@@ -1,11 +1,11 @@
 <template>
 <section>
   <div class="title">
-    <h1>Just <span>one</span> more step.</h1>
-    <p>A verification email will be sent to you shortly. Follow its instructions and you are ready start your next adventure.</p>
-    <p>Or log in here after verifying your account by clicking the button below.</p>
+    <h1>{{ $t('verify.headerFront') }}<span>{{ $t('verify.headerSpan') }}</span>{{ $t('verify.headerBack') }}</h1>
+    <p>{{ $t('verify.subheader') }}</p>
+    <p>{{ $t('verify.subheader2') }}</p>
   </div>
-  <NuxtLink class="filledAccentButton" to="/auth/login">Log In</NuxtLink>
+  <NuxtLink class="filledAccentButton" to="/auth/login">{{ $t('verify.login') }}</NuxtLink>
 </section>
 </template>
 
@@ -35,7 +35,7 @@
     display: flex
     flex-direction: column
     align-items: center
-    max-width: 60rem
+    max-width: 65rem
 
     gap: 1rem
     margin-bottom: 4rem

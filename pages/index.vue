@@ -1,13 +1,12 @@
 <template>
 <section>
   <div class="title">
-    <h1>Welcome to the <br><span>TTRPG Suite!</span></h1>
-    <p>The tool covering every aspect of table top role playing. From characters to maps to playing together. Start your
-      adventure now!</p>
+    <h1>{{ $t('landing.headerFront') }}<span>{{ $t('landing.headerSpan') }}</span>{{ $t('landing.headerBack') }}</h1>
+    <p>{{ $t('landing.subheader') }}</p>
   </div>
   <div class="buttons">
-    <NuxtLink class="filledAccentButton" to="/auth/login">Log In</NuxtLink>
-    <NuxtLink class="outlinedAccentButton" to="/auth/signup">Sign Up</NuxtLink>
+    <NuxtLink class="filledAccentButton" to="/auth/login">{{ $t('landing.login') }}</NuxtLink>
+    <NuxtLink class="outlinedAccentButton" to="/auth/signup">{{ $t('landing.signup') }}</NuxtLink>
   </div>
 </section>
 </template>
@@ -39,6 +38,7 @@
     display: flex
     flex-direction: column
     align-items: center
+    max-width: 60rem
     gap: 1rem
     margin-bottom: 4rem
 

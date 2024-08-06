@@ -18,7 +18,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
   ],
   i18n: {
-    vueI18n: './assets/i18n.config.ts'
+    vueI18n: './assets/i18n/i18n.config.ts'
   },
   supabase: {
     url: 'https://rgmkkhvxzgnjztovybrd.supabase.co',
