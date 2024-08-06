@@ -1,14 +1,10 @@
 <template>
 <section>
   <div class="title">
-    <h1>Welcome to the <br><span>TTRPG Suite!</span></h1>
-    <p>The tool covering every aspect of table top role playing. From characters to maps to playing together. Start your
-      adventure now!</p>
+    <h1>Thanks for joining us on your next <span>Adventure!</span></h1>
+    <p>Your account has been verified and you are now ready to start journey with the <span>TTRPG Suite.</span></p>
   </div>
-  <div class="buttons">
-    <NuxtLink class="filledAccentButton" to="/auth/login">Log In</NuxtLink>
-    <NuxtLink class="outlinedAccentButton" to="/auth/signup">Sign Up</NuxtLink>
-  </div>
+  <NuxtLink class="filledAccentButton" to="/home">Let's Go!</NuxtLink>
 </section>
 </template>
 
@@ -32,18 +28,17 @@
 
     color: var(--text-2)
 
-    max-width: 40rem
     margin: 0
+
+    span
+      color: var(--accent-1)
 
   .title
     display: flex
     flex-direction: column
     align-items: center
+    max-width: 80rem
+
     gap: 1rem
     margin-bottom: 4rem
-
-  .buttons
-    display: flex
-    justify-content: center
-    gap: 2rem
 </style>

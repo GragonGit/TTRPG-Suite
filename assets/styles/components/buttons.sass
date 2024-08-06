@@ -1,0 +1,31 @@
+@mixin button($border-color, $background-color, $color, $background-color-hover, $color-hover)
+  font-size: 1.25rem
+  line-height: 2rem
+  text-decoration: none
+
+  outline: none
+  border: solid 1px
+  border-radius: 0.75rem
+
+  padding: 0.75rem 1rem
+
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out
+
+  border-color: $border-color
+  background-color: $background-color
+  color: $color
+
+  &:hover, &:active, &:focus
+    text-decoration: none
+
+    background-color: $background-color-hover
+    color: $color-hover
+
+  &:disabled
+    opacity: 80%
+
+.filledAccentButton
+  @include button(var(--accent-1), var(--accent-1), var(--accent-1-text), var(--accent-1-hover), var(--accent-1-text))
+
+.outlinedAccentButton
+  @include button(var(--accent-1), transparent, var(--accent-1), var(--accent-1), var(--accent-1-text))

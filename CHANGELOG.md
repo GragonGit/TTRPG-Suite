@@ -6,8 +6,20 @@ Welcome to the Changelog. The versioning works as follows:
 
 Changes in the repository not influencing the actual application e.g. Issue Templates do not require a version change.
 
-## 0.3.0 - Theme Change POC
-- Added Theme Change POC
+## 0.4.0 - Account creation
+- Added Supabase Module - https://nuxt.com/modules/supabase
+- Updated theme logic and variables
+- Created landing page
+- Created log in page
+- Created sign up page
+- Created verification page
+- Created confirmation page
+- Created temporary home page
+
+This is all about account authentication with Supabase. This means log in, sign up, verification and confirmation pages and the landing page for good meassure. Creating these pages also meant updating the theme poc. Mainly putting its logic into its own composable and adding/renaming theme variables. The actual changing of the theme will be another update. Lastly, I also added a temprary home page just to test supabase functionality and allow log outs.
+
+## 0.3.0 - Theme Change PoC
+- Added theme change PoC
 
 Added a proof of concept for changing the theme "base" and "accent". Basically separating changing between light and dark mode and the accent color of the app. There is no UI. This is just the core functionality. 
 
