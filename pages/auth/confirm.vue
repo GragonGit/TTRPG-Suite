@@ -1,10 +1,10 @@
 <template>
 <section>
   <div class="title">
-    <h1>Thanks for joining us on your next <span>Adventure!</span></h1>
-    <p>Your account has been verified and you are now ready to start journey with the <span>TTRPG Suite.</span></p>
+    <h1>{{ $t('confirm.headerFront') }}<span>{{ $t('confirm.headerSpan') }}</span>{{ $t('confirm.headerBack') }}</h1>
+    <p>{{ $t('confirm.subheaderFront') }}<span>{{ $t('confirm.subheaderSpan') }}</span>{{ $t('confirm.subheaderBack') }}</p>
   </div>
-  <NuxtLink class="filledAccentButton" to="/home">Let's Go!</NuxtLink>
+  <NuxtLink class="filledAccentButton" to="/home">{{ $t('confirm.go') }}</NuxtLink>
 </section>
 </template>
 

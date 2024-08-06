@@ -1,24 +1,24 @@
 <template>
 <div class="login">
-  <h2>Log In</h2>
+  <h2>{{ $t('login.header') }}</h2>
   <form @submit.prevent="loginWithPassword()">
     <div class="formLabelTextDiv">
-      <label class="formLabel" for="emailInput">Email</label>
-      <input id="emailInput" class="formTextField" type="text" name="emailInput" placeholder="Email" v-model="email" />
+      <label class="formLabel" for="emailInput">{{ $t('login.email.label') }}</label>
+      <input id="emailInput" class="formTextField" type="text" name="emailInput" :placeholder="$t('login.email.placeholder')" v-model="email" />
     </div>
 
     <div class="formLabelTextDiv">
-      <label class="formLabel" for="passwordInput">Password</label>
-      <input id="passwordInput" class="formTextField" type="password" name="passwordInput" placeholder="Password"
+      <label class="formLabel" for="passwordInput">{{ $t('login.password.label') }}</label>
+      <input id="passwordInput" class="formTextField" type="password" name="passwordInput" :placeholder="$t('login.password.placeholder')"
         v-model="password" />
     </div>
 
     <div class="loginSignup">
-      <input class="filledAccentButton" type="submit" :value="isLoading ? 'Loading' : 'Log In'" :disabled="isLoading" />
-      <NuxtLink class="signupLink" to="/auth/signup">Sign up instead</NuxtLink>
+      <input class="filledAccentButton" type="submit" :value="isLoading ? $t('login.login.loading') : $t('login.login.login')" :disabled="isLoading" />
+      <NuxtLink class="signupLink" to="/auth/signup">{{ $t('login.signup') }}</NuxtLink>
     </div>
 
-    <NuxtLink to="/">Back to Start</NuxtLink>
+    <NuxtLink to="/">{{ $t('login.landing') }}</NuxtLink>
   </form>
 </div>
 </template>
