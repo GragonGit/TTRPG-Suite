@@ -11,6 +11,12 @@
 </section>
 </template>
 
+<script lang="ts" setup>
+definePageMeta({
+    layout: 'auth'
+})
+</script>
+
 <style lang="sass" scoped>
   section
     display: flex

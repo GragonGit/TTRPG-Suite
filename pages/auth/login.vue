@@ -4,17 +4,19 @@
   <form @submit.prevent="loginWithPassword()">
     <div class="formLabelTextDiv">
       <label class="formLabel" for="emailInput">{{ $t('login.email.label') }}</label>
-      <input id="emailInput" class="formTextField" type="text" name="emailInput" :placeholder="$t('login.email.placeholder')" v-model="email" />
+      <input id="emailInput" class="formTextField" type="text" name="emailInput"
+        :placeholder="$t('login.email.placeholder')" v-model="email" />
     </div>
 
     <div class="formLabelTextDiv">
       <label class="formLabel" for="passwordInput">{{ $t('login.password.label') }}</label>
-      <input id="passwordInput" class="formTextField" type="password" name="passwordInput" :placeholder="$t('login.password.placeholder')"
-        v-model="password" />
+      <input id="passwordInput" class="formTextField" type="password" name="passwordInput"
+        :placeholder="$t('login.password.placeholder')" v-model="password" />
     </div>
 
     <div class="loginSignup">
-      <input class="filledAccentButton" type="submit" :value="isLoading ? $t('login.login.loading') : $t('login.login.login')" :disabled="isLoading" />
+      <input class="filledAccentButton" type="submit"
+        :value="isLoading ? $t('login.login.loading') : $t('login.login.login')" :disabled="isLoading" />
       <NuxtLink class="signupLink" to="/auth/signup">{{ $t('login.signup') }}</NuxtLink>
     </div>
 
@@ -24,6 +26,10 @@
 </template>
 
 <script lang="ts" setup>
+definePageMeta({
+  layout: 'auth'
+})
+
 const supabase = useSupabaseClient()
 
 const email = ref('')

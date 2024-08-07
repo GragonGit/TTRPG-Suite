@@ -4,28 +4,28 @@
   <form @submit.prevent="signUpWithPassword()">
     <div class="formLabelTextDiv">
       <label class="formLabel" for="usernameInput">{{ $t('signup.username.label') }}</label>
-      <input id="usernameInput" class="formTextField" type="text" name="usernameInput" :placeholder="$t('signup.username.placeholder')"
-        v-model="username" @blur="validateUsername()" />
+      <input id="usernameInput" class="formTextField" type="text" name="usernameInput"
+        :placeholder="$t('signup.username.placeholder')" v-model="username" @blur="validateUsername()" />
       <p v-if="!isValidUsername" class="formInvalid">{{ $t('signup.username.invalid') }}</p>
     </div>
 
     <div class="formLabelTextDiv">
       <label class="formLabel" for="emailInput">{{ $t('signup.email.label') }}</label>
-      <input id="emailInput" class="formTextField" type="text" name="emailInput" :placeholder="$t('signup.email.placeholder')" v-model="email"
-        @blur="validateEmail()" />
+      <input id="emailInput" class="formTextField" type="text" name="emailInput"
+        :placeholder="$t('signup.email.placeholder')" v-model="email" @blur="validateEmail()" />
       <p v-if="!isValidEmail" class="formInvalid">{{ $t('signup.email.invalid') }}</p>
     </div>
 
     <div class="formLabelTextDiv">
       <label class="formLabel" for="passwordInput">{{ $t('signup.password.label') }}</label>
-      <input id="passwordInput" class="formTextField" type="password" name="passwordInput" :placeholder="$t('signup.password.placeholder')"
-        v-model="password" @blur="validatePassword()" />
+      <input id="passwordInput" class="formTextField" type="password" name="passwordInput"
+        :placeholder="$t('signup.password.placeholder')" v-model="password" @blur="validatePassword()" />
       <p v-if="!isValidPassword" class="formInvalid">{{ $t('signup.password.invalid') }}</p>
     </div>
 
     <div class="loginSignup">
-      <input class="filledAccentButton" type="submit" :value="isLoading ? $t('signup.signup.loading') : $t('signup.signup.signup')"
-        :disabled="isLoading" />
+      <input class="filledAccentButton" type="submit"
+        :value="isLoading ? $t('signup.signup.loading') : $t('signup.signup.signup')" :disabled="isLoading" />
       <NuxtLink class="loginLink" to="/auth/login">{{ $t('signup.login') }}</NuxtLink>
     </div>
 
@@ -35,6 +35,10 @@
 </template>
 
 <script lang="ts" setup>
+definePageMeta({
+  layout: 'auth'
+})
+
 const VALID_USERNAME_REGEX = '^[a-zA-Z0-9][a-zA-Z0-9_ .-]*[a-zA-Z0-9]$'
 const VALID_EMAIL_REGEX = '^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$'
 

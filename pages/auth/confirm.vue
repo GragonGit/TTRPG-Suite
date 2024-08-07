@@ -2,11 +2,18 @@
 <section>
   <div class="title">
     <h1>{{ $t('confirm.headerFront') }}<span>{{ $t('confirm.headerSpan') }}</span>{{ $t('confirm.headerBack') }}</h1>
-    <p>{{ $t('confirm.subheaderFront') }}<span>{{ $t('confirm.subheaderSpan') }}</span>{{ $t('confirm.subheaderBack') }}</p>
+    <p>{{ $t('confirm.subheaderFront') }}<span>{{ $t('confirm.subheaderSpan') }}</span>{{ $t('confirm.subheaderBack') }}
+    </p>
   </div>
   <NuxtLink class="filledAccentButton" to="/home">{{ $t('confirm.go') }}</NuxtLink>
 </section>
 </template>
+
+<script lang="ts" setup>
+definePageMeta({
+  layout: 'auth'
+})
+</script>
 
 <style lang="sass" scoped>
   section
