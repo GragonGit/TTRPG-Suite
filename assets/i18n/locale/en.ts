@@ -1,6 +1,11 @@
 import type { I18n } from "../i18n";
 
 export const en: I18n = {
+  layouts: {
+    auth: {
+      legal: "Legal"
+    }
+  },
   landing: {
     headerFront: 'Welcome to the ',
     headerSpan: 'TTRPG Suite!',
@@ -8,6 +13,9 @@ export const en: I18n = {
     subheader: 'The tool covering every aspect of table top role playing. From characters to maps to playing together. Start your adventure now!',
     login: 'Log In',
     signup: 'Sign Up'
+  },
+  legal: {
+    german: 'Imprint is only available in German.'
   },
   confirm: {
     headerFront: 'Thanks for joining us on your next ',
@@ -66,5 +74,5 @@ export const en: I18n = {
     subheader: 'A verification email will be sent to you shortly. Follow its instructions and you are ready start your next adventure.',
     subheader2: 'Or log in here after verifying your account by clicking the button below.',
     login: 'Log In'
-  }
+  },
 }
