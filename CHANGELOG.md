@@ -6,6 +6,15 @@ Welcome to the Changelog. The versioning works as follows:
 
 Changes in the repository not influencing the actual application e.g. Issue Templates do not require a version change.
 
+# 0.6.0 - Layout and Legal
+- Addded legal page
+- Added header and footer (layout) for auth pages, landing page and legal page
+- Added TTRPG Suite Icon
+- Fixed styling issues
+- Removed Rubik font
+
+This one is all about that legal stuff. German/EU laws are good but annoying to implement. I basically added a legal page and a layout with links to said page and to the landing page. This made some UI issues surfaces that needed to be adressed. Additionally, I removed the Rubik font as it is a Google Font. There is so much contradicting information out there whether it is legal (in terms of the DSGVO) to use Google Fonts or not that I decided to remove the Rubik font for now. To end on somewhat of a good note, I added the first version of the TTRPG Suite icon. What a piece of art. I know.
+
 ## 0.5.0 - I18n implementation
 - Implemented i18n module
 - Added English translation
