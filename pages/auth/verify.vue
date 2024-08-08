@@ -16,33 +16,29 @@ definePageMeta({
 </script>
 
 <style lang="sass" scoped>
-  section
-    display: flex
-    justify-content: center
-    align-items: center
-    flex-direction: column
+section
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
 
-    position: absolute
-    top: -15rem
-    bottom: 0
-    left: 0
-    right: 0
+  padding-top: 15rem
 
-    text-align: center
+  text-align: center
 
-  p
-    font-weight: 500
+p
+  font-weight: 500
 
-    color: var(--text-2)
+  color: var(--text-2)
 
-    margin: 0
+  margin: 0
 
-  .title
-    display: flex
-    flex-direction: column
-    align-items: center
-    max-width: 65rem
+.title
+  display: flex
+  flex-direction: column
+  align-items: center
+  max-width: 65rem
 
-    gap: 1rem
-    margin-bottom: 4rem
+  gap: 1rem
+  margin-bottom: 4rem
 </style>

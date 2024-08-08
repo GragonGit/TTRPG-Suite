@@ -1,5 +1,5 @@
 <template>
-<div class="signup">
+<section>
   <h2>{{ $t('signup.header') }}</h2>
   <form @submit.prevent="signUpWithPassword()">
     <div class="formLabelTextDiv">
@@ -31,7 +31,7 @@
 
     <NuxtLink to="/">{{ $t('signup.landing') }}</NuxtLink>
   </form>
-</div>
+</section>
 </template>
 
 <script lang="ts" setup>
@@ -113,40 +113,35 @@ const validatePassword = () => {
 </script>
 
 <style lang="sass" scoped>
-  .signup
-    display: flex
-    justify-content: center
-    align-items: center
-    flex-direction: column
+section
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
 
-    position: absolute
-    top: -15rem
-    bottom: 0
-    left: 0
-    right: 0
-  
-  form
-    display: flex
-    flex-direction: column
-    align-items: center
+  padding-top: 15rem
 
-    width: 32rem
-    gap: 2rem
-    margin: 4rem
+form
+  display: flex
+  flex-direction: column
+  align-items: center
 
-  .loginSignup
-    display: flex
-    flex-direction: column
-    align-items: center
+  width: 32rem
+  gap: 2rem
+  margin: 4rem
 
-    width: 100%
-    margin-top: 0.75rem
-    gap: 1rem
+.loginSignup
+  display: flex
+  flex-direction: column
+  align-items: center
 
-  input[type=submit]
-    width: 100%
+  width: 100%
+  margin-top: 0.75rem
+  gap: 1rem
 
-  .loginLink
-    color: var(--accent-1)
+input[type=submit]
+  width: 100%
 
+.loginLink
+  color: var(--accent-1)
 </style>
