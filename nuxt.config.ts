@@ -12,6 +12,12 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-08-02',
   css: ["~/assets/styles/styles.sass"],
   devtools: { enabled: true },
+
+  runtimeConfig: {
+    public: {
+      imprint: process.env.imprint ?? '<p>Ein Fehler ist aufgetreten.</p>'
+    }
+  },
   modules: [
     "@nuxtjs/i18n",
     "@nuxtjs/supabase",
@@ -27,7 +33,7 @@ export default defineNuxtConfig({
       login: '/auth/login',
       callback: '',
       include: undefined,
-      exclude: ['/', '/auth/*'],
+      exclude: ['/', '/legal', '/auth/*'],
       cookieRedirect: false,
     }
   }

@@ -1,4 +1,9 @@
 export type I18n = {
+  layouts: {
+    auth: {
+      legal: string,
+    }
+  },
   landing: {
     headerFront: string,
     headerSpan: string,
@@ -6,6 +11,9 @@ export type I18n = {
     subheader: string,
     login: string,
     signup: string
+  },
+  legal: {
+    german: string
   },
   confirm: {
     headerFront: string,

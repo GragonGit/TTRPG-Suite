@@ -1,40 +1,44 @@
 <template>
-<div class="signup">
+<section>
   <h2>{{ $t('signup.header') }}</h2>
   <form @submit.prevent="signUpWithPassword()">
     <div class="formLabelTextDiv">
       <label class="formLabel" for="usernameInput">{{ $t('signup.username.label') }}</label>
-      <input id="usernameInput" class="formTextField" type="text" name="usernameInput" :placeholder="$t('signup.username.placeholder')"
-        v-model="username" @blur="validateUsername()" />
+      <input id="usernameInput" class="formTextField" type="text" name="usernameInput"
+        :placeholder="$t('signup.username.placeholder')" v-model="username" @blur="validateUsername()" />
       <p v-if="!isValidUsername" class="formInvalid">{{ $t('signup.username.invalid') }}</p>
     </div>
 
     <div class="formLabelTextDiv">
       <label class="formLabel" for="emailInput">{{ $t('signup.email.label') }}</label>
-      <input id="emailInput" class="formTextField" type="text" name="emailInput" :placeholder="$t('signup.email.placeholder')" v-model="email"
-        @blur="validateEmail()" />
+      <input id="emailInput" class="formTextField" type="text" name="emailInput"
+        :placeholder="$t('signup.email.placeholder')" v-model="email" @blur="validateEmail()" />
       <p v-if="!isValidEmail" class="formInvalid">{{ $t('signup.email.invalid') }}</p>
     </div>
 
     <div class="formLabelTextDiv">
       <label class="formLabel" for="passwordInput">{{ $t('signup.password.label') }}</label>
-      <input id="passwordInput" class="formTextField" type="password" name="passwordInput" :placeholder="$t('signup.password.placeholder')"
-        v-model="password" @blur="validatePassword()" />
+      <input id="passwordInput" class="formTextField" type="password" name="passwordInput"
+        :placeholder="$t('signup.password.placeholder')" v-model="password" @blur="validatePassword()" />
       <p v-if="!isValidPassword" class="formInvalid">{{ $t('signup.password.invalid') }}</p>
     </div>
 
     <div class="loginSignup">
-      <input class="filledAccentButton" type="submit" :value="isLoading ? $t('signup.signup.loading') : $t('signup.signup.signup')"
-        :disabled="isLoading" />
+      <input class="filledAccentButton" type="submit"
+        :value="isLoading ? $t('signup.signup.loading') : $t('signup.signup.signup')" :disabled="isLoading" />
       <NuxtLink class="loginLink" to="/auth/login">{{ $t('signup.login') }}</NuxtLink>
     </div>
 
     <NuxtLink to="/">{{ $t('signup.landing') }}</NuxtLink>
   </form>
-</div>
+</section>
 </template>
 
 <script lang="ts" setup>
+definePageMeta({
+  layout: 'auth'
+})
+
 const VALID_USERNAME_REGEX = '^[a-zA-Z0-9][a-zA-Z0-9_ .-]*[a-zA-Z0-9]$'
 const VALID_EMAIL_REGEX = '^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$'
 
@@ -109,40 +113,35 @@ const validatePassword = () => {
 </script>
 
 <style lang="sass" scoped>
-  .signup
-    display: flex
-    justify-content: center
-    align-items: center
-    flex-direction: column
+section
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
 
-    position: absolute
-    top: -15rem
-    bottom: 0
-    left: 0
-    right: 0
-  
-  form
-    display: flex
-    flex-direction: column
-    align-items: center
+  padding-top: 15rem
 
-    width: 32rem
-    gap: 2rem
-    margin: 4rem
+form
+  display: flex
+  flex-direction: column
+  align-items: center
 
-  .loginSignup
-    display: flex
-    flex-direction: column
-    align-items: center
+  width: 32rem
+  gap: 2rem
+  margin: 4rem
 
-    width: 100%
-    margin-top: 0.75rem
-    gap: 1rem
+.loginSignup
+  display: flex
+  flex-direction: column
+  align-items: center
 
-  input[type=submit]
-    width: 100%
+  width: 100%
+  margin-top: 0.75rem
+  gap: 1rem
 
-  .loginLink
-    color: var(--accent-1)
+input[type=submit]
+  width: 100%
 
+.loginLink
+  color: var(--accent-1)
 </style>

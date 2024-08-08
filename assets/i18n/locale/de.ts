@@ -1,6 +1,11 @@
 import type { I18n } from "../i18n";
 
 export const de: I18n = {
+  layouts: {
+    auth: {
+      legal: "Impressum"
+    }
+  },
   landing: {
     headerFront: "Willkommen zur ",
     headerSpan: "TTRPG Suite!",
@@ -8,6 +13,9 @@ export const de: I18n = {
     subheader: "Das Tool für alle Aspekte des Table-Top-Rollenspiels. Von Charakteren über Karten bis hin zum gemeinsamen Spiel. Starte dein Abenteuer noch heute!",
     login: "Anmelden",
     signup: "Registrieren"
+  },
+  legal: {
+    german: ''
   },
   confirm: {
     headerFront: "Danke, dass du uns bei deinem nächsten ",
