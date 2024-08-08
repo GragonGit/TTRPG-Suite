@@ -12,8 +12,9 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-08-02',
   css: ["~/assets/styles/styles.sass"],
   devtools: { enabled: true },
+
   runtimeConfig: {
-    imprint: ''
+    imprint: process.env.imprint ?? '<p>Ein Fehler ist aufgetreten.</p>'
   },
   modules: [
     "@nuxtjs/i18n",
