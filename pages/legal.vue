@@ -5,7 +5,7 @@
 
     <p>Angaben gemäß § 5 DDG<br><br></p>
 
-    <div v-html="config.imprint"></div>
+    <div v-html="config.public.imprint"></div>
 
     <h3>
       Haftungsausschluss

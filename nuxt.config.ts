@@ -14,7 +14,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   runtimeConfig: {
-    imprint: process.env.imprint ?? '<p>Ein Fehler ist aufgetreten.</p>'
+    public: {
+      imprint: process.env.imprint ?? '<p>Ein Fehler ist aufgetreten.</p>'
+    }
   },
   modules: [
     "@nuxtjs/i18n",
