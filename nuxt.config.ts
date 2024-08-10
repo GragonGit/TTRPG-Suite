@@ -19,6 +19,7 @@ export default defineNuxtConfig({
     }
   },
   modules: [
+    "@nuxt/eslint",
     "@nuxtjs/i18n",
     "@nuxtjs/supabase",
     '@vueuse/nuxt',
