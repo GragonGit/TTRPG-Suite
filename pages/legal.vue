@@ -90,6 +90,9 @@ section
   flex-direction: column
   max-width: 50rem
   margin: auto
+  
+  p
+    text-wrap: pretty
 
 a
   color: var(--accent-1)

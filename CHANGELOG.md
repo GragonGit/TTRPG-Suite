@@ -6,6 +6,12 @@ Welcome to the Changelog. The versioning works as follows:
 
 Changes in the repository not influencing the actual application e.g. Issue Templates do not require a version change.
 
+# 0.6.1 - Rubik is back
+- Readded Rubik font
+- Fixed line wrap in legal page
+
+Huge credits to [this](https://www.youtube.com/watch?v=Z3bie08QGnQ) Youtube video and subsequently [this](https://gwfh.mranftl.com/fonts) website for showing how to add a font properly/legally. Also, I fixed an unwanted line wrap in the legal section.
+
 # 0.6.0 - Layout and Legal
 - Addded legal page
 - Added header and footer (layout) for auth pages, landing page and legal page
