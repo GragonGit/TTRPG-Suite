@@ -4,22 +4,22 @@
   <form @submit.prevent="signUpWithPassword()">
     <div class="formLabelTextDiv">
       <label class="formLabel" for="usernameInput">{{ $t('signup.username.label') }}</label>
-      <input id="usernameInput" class="formTextField" type="text" name="usernameInput"
-        :placeholder="$t('signup.username.placeholder')" v-model="username" @blur="validateUsername()" />
+      <input id="usernameInput" v-model="username" class="formTextField" type="text"
+        name="usernameInput" :placeholder="$t('signup.username.placeholder')" @blur="validateUsername()" />
       <p v-if="!isValidUsername" class="formInvalid">{{ $t('signup.username.invalid') }}</p>
     </div>
 
     <div class="formLabelTextDiv">
       <label class="formLabel" for="emailInput">{{ $t('signup.email.label') }}</label>
-      <input id="emailInput" class="formTextField" type="text" name="emailInput"
-        :placeholder="$t('signup.email.placeholder')" v-model="email" @blur="validateEmail()" />
+      <input id="emailInput" v-model="email" class="formTextField" type="text"
+        name="emailInput" :placeholder="$t('signup.email.placeholder')" @blur="validateEmail()" />
       <p v-if="!isValidEmail" class="formInvalid">{{ $t('signup.email.invalid') }}</p>
     </div>
 
     <div class="formLabelTextDiv">
       <label class="formLabel" for="passwordInput">{{ $t('signup.password.label') }}</label>
-      <input id="passwordInput" class="formTextField" type="password" name="passwordInput"
-        :placeholder="$t('signup.password.placeholder')" v-model="password" @blur="validatePassword()" />
+      <input id="passwordInput" v-model="password" class="formTextField" type="password"
+        name="passwordInput" :placeholder="$t('signup.password.placeholder')" @blur="validatePassword()" />
       <p v-if="!isValidPassword" class="formInvalid">{{ $t('signup.password.invalid') }}</p>
     </div>
 

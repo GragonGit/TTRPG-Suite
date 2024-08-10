@@ -5,6 +5,7 @@
 
   <p>Angaben gemäß § 5 DDG<br><br></p>
 
+  <!-- eslint-disable-next-line vue/no-v-html -->
   <div v-html="config.public.imprint"></div>
 
   <h3>
