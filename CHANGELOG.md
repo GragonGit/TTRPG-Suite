@@ -6,6 +6,15 @@ Welcome to the Changelog. The versioning works as follows:
 
 Changes in the repository not influencing the actual application e.g. Issue Templates do not require a version change.
 
+# 0.6.2 - Linting
+- Updated dependencies
+- Added ESLint Module - https://nuxt.com/modules/eslint
+- Added Lint Check Workflow
+
+Updated some dependencies. The Nuxtr extension makes this so much easier to track. I also added the ESLint module because we like consitent code and a related lint check workflow.
+
+As you can tell I toned down increasing the minor version. Although, the rules mentioned at the top do not apply prior version 1.0.0 I still feel like I should give somewhat of a sense on how important the update is. Thus, new features will increase the minor version from now on and changes like these will only increase the patch version. Additionally, the version number won't increase that fast avoiding triple digits in the minor version.
+
 # 0.6.1 - Rubik is back
 - Readded Rubik font
 - Fixed line wrap in legal page

@@ -4,14 +4,14 @@
   <form @submit.prevent="loginWithPassword()">
     <div class="formLabelTextDiv">
       <label class="formLabel" for="emailInput">{{ $t('login.email.label') }}</label>
-      <input id="emailInput" class="formTextField" type="text" name="emailInput"
-        :placeholder="$t('login.email.placeholder')" v-model="email" />
+      <input id="emailInput" v-model="email" class="formTextField" type="text" name="emailInput"
+        :placeholder="$t('login.email.placeholder')" />
     </div>
 
     <div class="formLabelTextDiv">
       <label class="formLabel" for="passwordInput">{{ $t('login.password.label') }}</label>
-      <input id="passwordInput" class="formTextField" type="password" name="passwordInput"
-        :placeholder="$t('login.password.placeholder')" v-model="password" />
+      <input id="passwordInput" v-model="password" class="formTextField" type="password" name="passwordInput"
+        :placeholder="$t('login.password.placeholder')" />
     </div>
 
     <div class="loginSignup">

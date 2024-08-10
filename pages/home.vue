@@ -8,7 +8,7 @@ const supabase = useSupabaseClient()
 const supabaseUser = useSupabaseUser()
 const username = ref('')
 
-let { data: users, error } = await supabase
+const { data: users, error } = await supabase
   .from('users')
   .select('display_name')
   .eq('id', supabaseUser.value.id)
