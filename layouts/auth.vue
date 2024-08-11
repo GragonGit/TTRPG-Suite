@@ -21,10 +21,10 @@ header, footer
   justify-content: space-between
   position: relative
 
-  padding: 1rem 2rem
+  padding: clamp(0.5rem, 5vw, 1rem) clamp(0.5rem, 10vw, 2rem)
 
 .slot
-  min-height: calc( 100vh - 8rem )
+  min-height: calc( 100vh - 10rem )
 
 footer
   flex-direction: row-reverse

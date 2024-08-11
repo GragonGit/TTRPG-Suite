@@ -39,6 +39,7 @@ p
   align-items: center
   max-width: 65rem
 
+  padding: 0rem 1rem
   gap: 1rem
   margin-bottom: 4rem
 </style>

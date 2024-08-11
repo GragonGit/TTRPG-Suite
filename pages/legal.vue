@@ -91,6 +91,7 @@ section
   flex-direction: column
   max-width: 50rem
   margin: auto
+  padding: 0.5rem
   
   p
     text-wrap: pretty
