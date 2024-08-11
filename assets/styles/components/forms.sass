@@ -6,12 +6,13 @@
   gap: 0.5rem
 
 .formLabel
-  font-size: 1rem
-  line-height: 1rem
+  font-size: clamp(12px, 3vw, 16px)
+  line-height: clamp(12px, 3vw, 16px)
 
 .formTextField
-  font-size: 1.25rem
-  line-height: 2rem
+  $clamp-value: clamp(12px, 5vw, 24px)
+  font-size: $clamp-value
+  line-height: calc($clamp-value * 1.25)
 
   outline: none
   border: solid 1px
@@ -26,8 +27,8 @@
     border-color: var(--accent-1)
 
 .formInvalid
-  font-size: 1rem
-  line-height: 1rem
+  font-size: clamp(12px, 3vw, 16px)
+  line-height: clamp(12px, 3vw, 16px)
 
   margin: 0
 

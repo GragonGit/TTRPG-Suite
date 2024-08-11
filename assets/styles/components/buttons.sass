@@ -1,6 +1,7 @@
 @mixin button($border-color, $background-color, $color, $background-color-hover, $color-hover)
-  font-size: 1.25rem
-  line-height: 2rem
+  $clamp-value: clamp(12px, 3vw, 24px)
+  font-size: $clamp-value
+  line-height: calc($clamp-value * 1.25)
   text-decoration: none
 
   outline: none

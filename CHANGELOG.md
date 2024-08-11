@@ -6,6 +6,12 @@ Welcome to the Changelog. The versioning works as follows:
 
 Changes in the repository not influencing the actual application e.g. Issue Templates do not require a version change.
 
+# 0.6.3 - Responsive UI
+- Updated UI to be responsive
+- Removed run lint workflow on push
+
+Not much to say. Gotta keep it mobile friendly. Also removed the on push condition for the lint workflow because it is unnecessary.
+
 # 0.6.2 - Linting
 - Updated dependencies
 - Added ESLint Module - https://nuxt.com/modules/eslint

@@ -26,7 +26,7 @@ section
   align-items: center
   flex-direction: column
 
-  padding-top: 15rem
+  padding-top: clamp(10rem, 50vw, 15rem)
 
   text-align: center
 
@@ -35,19 +35,23 @@ p
 
   color: var(--text-2)
 
-  max-width: 40rem
+  width: clamp(0px, 90vw, 40rem)
   margin: 0
 
 .title
   display: flex
   flex-direction: column
   align-items: center
-  max-width: 60rem
+  width: clamp(0px, 100vw, 60rem)
   gap: 1rem
-  margin-bottom: 4rem
+  margin-bottom: clamp(2rem, 10vw, 4rem)
 
 .buttons
   display: flex
   justify-content: center
+  margin: 0 2rem
   gap: 2rem
+
+  @media (max-width: 260px)
+    flex-direction: column
 </style>

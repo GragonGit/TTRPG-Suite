@@ -126,9 +126,9 @@ form
   flex-direction: column
   align-items: center
 
-  width: 32rem
+  width: clamp(5rem, 80vw, 32rem)
   gap: 2rem
-  margin: 4rem
+  margin: clamp(2rem, 5vw, 4rem)
 
 .loginSignup
   display: flex
