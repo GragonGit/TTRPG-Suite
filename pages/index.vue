@@ -15,7 +15,7 @@
 
 <script lang="ts" setup>
 definePageMeta({
-  layout: 'auth'
+  layout: 'thin'
 })
 </script>
 

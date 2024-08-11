@@ -79,7 +79,7 @@
 
 <script lang="ts" setup>
 definePageMeta({
-  layout: 'auth'
+  layout: 'thin'
 })
 
 const config = useRuntimeConfig()
