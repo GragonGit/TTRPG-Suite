@@ -1,18 +1,20 @@
 <template>
-<header>
-  <NuxtLink to="/">
-    <img src="../public/favicon.ico" alt="TTRPG Suite Logo">
-  </NuxtLink>
-  <button ref="themeButton" class="transparentIconButton" @click.prevent="toggleTheme">
-    <TtrpgIcon :icon-name="themeIconName" />
-  </button>
-</header>
-<main class="slot">
-  <slot />
-</main>
-<footer>
-  <NuxtLink class="legal" to="/legal">{{ $t('layouts.auth.legal') }}</NuxtLink>
-</footer>
+<div>
+  <header>
+    <NuxtLink to="/">
+      <img src="../public/favicon.ico" alt="TTRPG Suite Logo">
+    </NuxtLink>
+    <button ref="themeButton" class="transparentIconButton" @click.prevent="toggleTheme">
+      <TtrpgIcon :icon-name="themeIconName" />
+    </button>
+  </header>
+  <main>
+    <slot />
+  </main>
+  <footer>
+    <NuxtLink class="legal" to="/legal">{{ $t('layouts.auth.legal') }}</NuxtLink>
+  </footer>
+</div>
 </template>
 
 <script lang="ts" setup>
@@ -28,6 +30,12 @@ const toggleTheme = () => {
 </script>
 
 <style lang="sass" scoped>
+div
+  min-height: 100dvh
+  display: grid
+  grid-template-rows: auto 1fr auto
+  grid-template-columns: minmax(0, 1fr)
+
 header, footer
   display: flex
   justify-content: space-between
@@ -35,12 +43,8 @@ header, footer
 
   padding: clamp(0.5rem, 5vw, 1rem) clamp(0.5rem, 10vw, 2rem)
 
-.slot
-  min-height: calc( 100vh - 10rem )
-
 footer
   flex-direction: row-reverse
-  padding-bottom: 0.1rem
 
 .legal
   font-size: 1rem
