@@ -1,16 +1,14 @@
 <template>
-<div class="content">
-  <section>
-    <div class="title">
-      <h1>{{ $t('landing.headerFront') }}<span>{{ $t('landing.headerSpan') }}</span>{{ $t('landing.headerBack') }}</h1>
-      <p>{{ $t('landing.subheader') }}</p>
-    </div>
-    <div class="buttons">
-      <NuxtLink class="filledAccentButton" to="/auth/login">{{ $t('landing.login') }}</NuxtLink>
-      <NuxtLink class="outlinedAccentButton" to="/auth/signup">{{ $t('landing.signup') }}</NuxtLink>
-    </div>
-  </section>
-</div>
+<section>
+  <div class="title">
+    <h1>{{ $t('landing.headerFront') }}<span>{{ $t('landing.headerSpan') }}</span>{{ $t('landing.headerBack') }}</h1>
+    <p>{{ $t('landing.subheader') }}</p>
+  </div>
+  <div class="buttons">
+    <NuxtLink class="filledAccentButton" to="/auth/login">{{ $t('landing.login') }}</NuxtLink>
+    <NuxtLink class="outlinedAccentButton" to="/auth/signup">{{ $t('landing.signup') }}</NuxtLink>
+  </div>
+</section>
 </template>
 
 <script lang="ts" setup>
