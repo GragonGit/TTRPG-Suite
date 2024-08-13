@@ -1,11 +1,11 @@
 <template>
 <header>
-  <NuxtLink class="logo" to="/">
+  <NuxtLink to="/">
     <img src="../public/favicon.ico" alt="TTRPG Suite Logo">
   </NuxtLink>
-  <div>
-    <!-- TODO Add Theme Change -->
-  </div>
+  <button ref="themeButton" class="transparentIconButton" @click.prevent="toggleTheme">
+    <TtrpgIcon :icon-name="themeIconName" />
+  </button>
 </header>
 <main class="slot">
   <slot />
@@ -14,6 +14,18 @@
   <NuxtLink class="legal" to="/legal">{{ $t('layouts.auth.legal') }}</NuxtLink>
 </footer>
 </template>
+
+<script lang="ts" setup>
+const { isLightBaseTheme, toggleBaseTheme } = useTheme()
+
+const themeButton = ref<HTMLButtonElement | null>(null)
+const themeIconName = computed(() => isLightBaseTheme() ? 'moon' : 'sun')
+
+const toggleTheme = () => {
+  toggleBaseTheme()
+  if (themeButton.value) { themeButton.value.blur() }
+}
+</script>
 
 <style lang="sass" scoped>
 header, footer
