@@ -33,14 +33,14 @@ p
 
   color: var(--text-2)
 
-  width: clamp(0px, 90vw, 40rem)
+  width: clamp(0rem, 90vw, 40rem)
   margin: 0
 
 .title
   display: flex
   flex-direction: column
   align-items: center
-  width: clamp(0px, 100vw, 60rem)
+  width: clamp(0rem, 100vw, 60rem)
   gap: 1rem
   margin-bottom: clamp(2rem, 10vw, 4rem)
 
@@ -50,6 +50,6 @@ p
   margin: 0 2rem
   gap: 2rem
 
-  @media (max-width: 260px)
+  @media (max-width: 17rem)
     flex-direction: column
 </style>

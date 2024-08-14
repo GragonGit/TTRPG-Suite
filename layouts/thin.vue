@@ -47,5 +47,6 @@ footer
   flex-direction: row-reverse
 
 .legal
-  font-size: 1rem
+  font-size: 0.6rem
+  line-height: normal
 </style>
