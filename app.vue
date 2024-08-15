@@ -1,7 +1,9 @@
 <template>
-<main>
-  <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
-</main>
+<NuxtLayout>
+  <NuxtPage />
+</NuxtLayout>
 </template>
+
+<script lang="ts" setup>
+onMounted(() => useTheme().initThemes())
+</script>

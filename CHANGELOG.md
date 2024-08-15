@@ -6,6 +6,17 @@ Welcome to the Changelog. The versioning works as follows:
 
 Changes in the repository not influencing the actual application e.g. Issue Templates do not require a version change.
 
+# 0.6.4 - Light / Dark Mode
+- Added base theme changing
+- Added dark mode version of accent color
+- Fixed footer to the bottom properly
+- Changed pixel values to rem for accessability
+- Made outline transparent for accessability
+
+You can now switch between light and dark mode by pressing a button. I'm not happy with how the initial theme works right now. Vue does not have the initial DOM nodes before mounting. Thus, I cannot modify the body before the onMounted lifecycle hook. However, in the same step the initial page is rendered as well meaning that the body is always rendered with its default values first and it takes one update cycle to set the theme class to the values defined in the local storage. Hit me up if you know a way to dynamically set the values of the body before the first render.
+
+Also made some minor styling adjustments for a better UI and accessability. For example a dark mode version of the purple accent color because in case you didn't know you cannot use the same colors as they would be oversaturated. Yes, I did not do this for light blue on purpose as there will be one major color theme update instead.
+
 # 0.6.3 - Responsive UI
 - Updated UI to be responsive
 - Removed run lint workflow on push
