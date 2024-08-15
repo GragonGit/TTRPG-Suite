@@ -1,11 +1,12 @@
 name: TODO
 description: Features or tasks that still need to be done
 title: "[TODO] "
+labels: ["Feature"]
 body:
   - type: dropdown
     attributes:
-      label: Priority
-      description: How important is this issue
+      label: Importance
+      description: How important is this issue for the final release?
       multiple: false
       options:
         - High
@@ -17,7 +18,6 @@ body:
   - type: textarea
     attributes:
       label: Description
-      description: What is the issue about
-      render: md
+      description: What is the issue about?
     validations:
       required: true

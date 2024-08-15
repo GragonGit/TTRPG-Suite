@@ -25,9 +25,13 @@
   &:disabled
     opacity: 80%
 
-@mixin iconButton($border-color, $background-color, $color, $background-color-hover, $color-hover)
+@mixin iconButton($background-color, $color, $background-color-hover, $color-hover)
+  display: flex
+  justify-content: center
+  align-items: center
+
   outline: transparent
-  border: solid 1px
+  border: none
   border-radius: 0.75rem
 
   height: 3rem
@@ -36,7 +40,6 @@
 
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out
 
-  border-color: $border-color
   background-color: $background-color
   color: $color
 
@@ -56,4 +59,7 @@
   @include button(var(--accent-1), transparent, var(--accent-1), var(--accent-1), var(--accent-1-text))
 
 .transparentIconButton
-  @include iconButton(transparent, transparent, var(--text-1), var(--background-1), var(--text-1))
+  @include iconButton(transparent, var(--text-1), var(--background-1), var(--text-1))
+
+.transparentAccentIconButton
+  @include iconButton(transparent, var(--accent-1), var(--background-1), var(--accent-1))

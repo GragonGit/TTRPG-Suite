@@ -1,8 +1,8 @@
 <template>
 <div>
   <header>
-    <NuxtLink to="/">
-      <img src="../public/favicon.ico" alt="TTRPG Suite Logo">
+    <NuxtLink to="/" class="transparentAccentIconButton">
+      <TtrpgIcon icon-name="ttrpgSuite" />
     </NuxtLink>
     <button ref="themeButton" class="transparentIconButton" @click.prevent="toggleTheme">
       <TtrpgIcon :icon-name="themeIconName" />
