@@ -6,6 +6,12 @@ Welcome to the Changelog. The versioning works as follows:
 
 Changes in the repository not influencing the actual application e.g. Issue Templates do not require a version change.
 
+# 0.6.5 - SVG Logo
+- Turned Logo into SVG
+- Minor icon button changes
+
+Used one of my useless talents, understanding how SVG paths work, to turn the TTRPGSuite logo into a SVG instead of using the favicon. This allows me to change its color with the selected theme and is generally just better. This also highlighted some issues with the icon button style component which got fixed.
+
 # 0.6.4 - Light / Dark Mode
 - Added base theme changing
 - Added dark mode version of accent color
