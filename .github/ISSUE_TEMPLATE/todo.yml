@@ -1,0 +1,23 @@
+name: TODO
+description: Features or tasks that still need to be done
+title: "[TODO] "
+body:
+  - type: dropdown
+    attributes:
+      label: Priority
+      description: How important is this issue
+      multiple: false
+      options:
+        - High
+        - Medium
+        - Low
+      default: 2
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Description
+      description: What is the issue about
+      render: md
+    validations:
+      required: true
