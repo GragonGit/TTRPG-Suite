@@ -4,7 +4,7 @@
 @use './fonts/fontIndex'
 
 @mixin text($size-percentage)
-  $clamp-value: clamp(max(12px, calc($size-percentage * 12px)), calc($size-percentage * 10vw), calc($size-percentage * 96px))
+  $clamp-value: clamp(max(0.75rem, calc($size-percentage * 1rem)), calc($size-percentage * 10vw), calc($size-percentage * 5.5rem))
   font-size: $clamp-value
   line-height: calc($clamp-value * calc(2 - $size-percentage))
   text-wrap: balance
@@ -19,15 +19,20 @@ body
   color: var(--text-1)
 
   font-family: Rubik, Helvetica Neue, Helvetica, Arial, sans-serif
+  transition: background-color 0.2s ease-in-out
 
 p, a
   @include text(0.3)
 
 a
+  outline: transparent
   text-decoration: none
   color: var(--text-1)
 
   &:hover
+    text-decoration: underline
+  
+  &:focus
     text-decoration: underline
 
 h1

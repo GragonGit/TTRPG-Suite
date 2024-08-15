@@ -4,7 +4,7 @@ export default defineNuxtConfig({
     head: {
       title: "TTRPG Suite",
       bodyAttrs: {
-        class: 'baseLight accentPurple'
+        class: 'baseLight accentPurpleLight'
       }
     }
   },
