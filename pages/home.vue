@@ -1,6 +1,8 @@
 <template>
-<h1>Hello {{ username }}</h1>
-<button @click="logout">Log out</button>
+<div>
+  <h1>Hello {{ username }}</h1>
+  <button @click="logout">Log out</button>
+</div>
 </template>
 
 <script lang="ts" setup>

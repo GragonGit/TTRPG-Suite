@@ -1,8 +1,15 @@
 <template>
 <section>
-  <div class="title">
-    <h1>{{ $t('landing.headerFront') }}<span>{{ $t('landing.headerSpan') }}</span>{{ $t('landing.headerBack') }}</h1>
-    <p>{{ $t('landing.subheader') }}</p>
+  <div class="titleGroup">
+    <div class="scroll">
+      <LandingIconScroll />
+      <LandingIconScroll :reverse="true" :offset="'-10s'" :seed="7" />
+      <LandingIconScroll :offset="'-20s'" :seed="12" />
+    </div>
+    <div class="title">
+      <h1>{{ $t('landing.headerFront') }}<span>{{ $t('landing.headerSpan') }}</span>{{ $t('landing.headerBack') }}</h1>
+      <p>{{ $t('landing.subheader') }}</p>
+    </div>
   </div>
   <div class="buttons">
     <NuxtLink class="filledAccentButton" to="/auth/login">{{ $t('landing.login') }}</NuxtLink>
@@ -36,13 +43,29 @@ p
   width: clamp(0rem, 90vw, 40rem)
   margin: 0
 
+.titleGroup
+  display: flex
+  justify-content: center
+  align-items: center
+
+.scroll
+  display: flex
+  flex-direction: column
+  gap: 1rem
+  position: absolute
+  margin-bottom: clamp(2rem, 10vw, 4rem)
+
 .title
   display: flex
   flex-direction: column
   align-items: center
-  width: clamp(0rem, 100vw, 60rem)
+  width: clamp(0rem, 100vw, 42rem)
   gap: 1rem
   margin-bottom: clamp(2rem, 10vw, 4rem)
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out
+  background-color: var(--background-base)
+  box-shadow: -1rem 0 1rem 0 var(--background-base), 1rem 0 1rem 0 var(--background-base)
+  z-index: 1
 
 .buttons
   display: flex

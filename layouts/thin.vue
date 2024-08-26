@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="container">
   <header>
     <NuxtLink to="/" class="transparentAccentIconButton">
       <TtrpgIcon icon-name="ttrpgSuite" />
@@ -30,7 +30,7 @@ const toggleTheme = () => {
 </script>
 
 <style lang="sass" scoped>
-div
+.container
   min-height: 100dvh
   display: grid
   grid-template-rows: auto 1fr auto
