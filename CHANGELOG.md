@@ -6,6 +6,13 @@ Welcome to the Changelog. The versioning works as follows:
 
 Changes in the repository not influencing the actual application e.g. Issue Templates do not require a version change.
 
+# 0.6.6 - Landing Page Icon Scroll
+- Added icon scroll to landing page
+- Increased dark mode contrast
+- Updated dependencies
+
+Added some scrolling icons to the landing page to give it some eye candy. This also includes the most scuffed version of a seeded randomizer you could think of. Also brightened the `--background-1` color because it lacked contrast compared to light mode.
+
 # 0.6.5 - SVG Logo
 - Turned Logo into SVG
 - Minor icon button changes
