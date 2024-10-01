@@ -52,7 +52,12 @@ $iconGap: 1rem
   display: flex
   gap: $iconGap
 
-  animation: 30s linear v-bind(offset) infinite v-bind("reverse ? 'reverse' : 'normal'") scroll
+  animation-duration: 30s
+  animation-timing-function: linear
+  animation-delay: v-bind(offset)
+  animation-iteration-count: infinite
+  animation-direction: v-bind("reverse ? 'reverse' : 'normal'")
+  animation-name: scroll
 
 @keyframes scroll
   0%
