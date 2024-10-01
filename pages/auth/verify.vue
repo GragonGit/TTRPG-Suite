@@ -22,7 +22,7 @@ section
   align-items: center
   flex-direction: column
 
-  padding-top: clamp(5rem, 50vw, 20rem)
+  padding-top: clamp(1rem, 5vw, 15rem)
 
   text-align: center
 

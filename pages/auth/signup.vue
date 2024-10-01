@@ -119,7 +119,7 @@ section
   align-items: center
   flex-direction: column
 
-  padding-top: clamp(1rem, 10vw, 15rem)
+  padding-top: clamp(1rem, 1vw, 15rem)
 
 form
   display: flex
