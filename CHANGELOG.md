@@ -6,6 +6,14 @@ Welcome to the Changelog. The versioning works as follows:
 
 Changes in the repository not influencing the actual application e.g. Issue Templates do not require a version change.
 
+# 0.6.7 - Icon Scroll fix
+- Fixed issues with the scrolling icons
+- Decreased padding top for landing and auth pages
+- Decreased overall text sizes
+- Updated dependencies
+
+Apparently when Vercel does its building process it does not resolve the "animation" CSS shorthand properly (or at least not the same way the dev preview does). Additionally, there was some horizontal overflow when the vertical scrollbar appears. Turns out testing UI on a big screen is not the best. Thus, the padding at the top and the font size got decreased a bit.
+
 # 0.6.6 - Landing Page Icon Scroll
 - Added icon scroll to landing page
 - Increased dark mode contrast
