@@ -127,8 +127,8 @@ form
   align-items: center
 
   width: clamp(5rem, 80vw, 32rem)
-  gap: 2rem
-  margin: clamp(2rem, 5vw, 4rem)
+  gap: 1.5rem
+  margin: clamp(2rem, 3vw, 4rem)
 
 .loginSignup
   display: flex
