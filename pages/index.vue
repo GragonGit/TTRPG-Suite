@@ -31,7 +31,7 @@ section
   align-items: center
   flex-direction: column
 
-  padding-top: clamp(10rem, 50vw, 15rem)
+  padding-top: clamp(1rem, 1vw, 15rem)
 
   text-align: center
 
