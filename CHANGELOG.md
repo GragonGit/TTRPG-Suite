@@ -6,6 +6,14 @@ Welcome to the Changelog. The versioning works as follows:
 
 Changes in the repository not influencing the actual application e.g. Issue Templates do not require a version change.
 
+# 0.6.8 - Header Improvements
+- Reduced header size
+- Landing page button now blurs
+- Created iconButton component
+- Update dependencies
+
+The header was just to big for smaller devices. I created an iconButton component which both header buttons now use. With this the header size got reduced and also the landing page button blurs.
+
 # 0.6.7 - Icon Scroll fix
 - Fixed issues with the scrolling icons
 - Decreased padding top for landing and auth pages

@@ -1,12 +1,8 @@
 <template>
 <div class="container">
   <header>
-    <NuxtLink to="/" class="transparentAccentIconButton">
-      <TtrpgIcon icon-name="ttrpgSuite" />
-    </NuxtLink>
-    <button ref="themeButton" class="transparentIconButton" @click.prevent="toggleTheme">
-      <TtrpgIcon :icon-name="themeIconName" />
-    </button>
+    <IconButton :icon-name="'ttrpgSuite'" color="--accent-1" color-hover="--accent-1" @ttrpg-click="navigate('/')" />
+    <IconButton :icon-name="themeIconName" @ttrpg-click="toggleBaseTheme" />
   </header>
   <main>
     <slot />
@@ -20,13 +16,8 @@
 <script lang="ts" setup>
 const { isLightBaseTheme, toggleBaseTheme } = useTheme()
 
-const themeButton = ref<HTMLButtonElement | null>(null)
+const navigate = navigateTo
 const themeIconName = computed(() => isLightBaseTheme() ? 'moon' : 'sun')
-
-const toggleTheme = () => {
-  toggleBaseTheme()
-  if (themeButton.value) { themeButton.value.blur() }
-}
 </script>
 
 <style lang="sass" scoped>
@@ -41,7 +32,7 @@ header, footer
   justify-content: space-between
   position: relative
 
-  padding: clamp(0.5rem, 5vw, 1rem) clamp(0.5rem, 10vw, 2rem)
+  padding: clamp(0.5rem, 1.5vw, 1rem) clamp(0.5rem, 10vw, 2rem)
 
 footer
   flex-direction: row-reverse

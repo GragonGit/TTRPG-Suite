@@ -4,7 +4,7 @@
     <div class="scroll">
       <LandingIconScroll />
       <LandingIconScroll :reverse="true" :offset="'-10s'" :seed="7" />
-      <LandingIconScroll :offset="'-20s'" :seed="12" />
+      <LandingIconScroll :offset="'-20s'" :seed="19" />
     </div>
     <div class="title">
       <h1>{{ $t('landing.headerFront') }}<span>{{ $t('landing.headerSpan') }}</span>{{ $t('landing.headerBack') }}</h1>
