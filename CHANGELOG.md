@@ -6,6 +6,11 @@ Welcome to the Changelog. The versioning works as follows:
 
 Changes in the repository not influencing the actual application e.g. Issue Templates do not require a version change.
 
+# 0.6.9 - Hover Media Query
+- Added touchscreen media query to iconButton
+
+Added a touchscreen media query to the iconButton to remove the hover effect after a touchscreen user as pressed the button. The only devices that will still have this issue are devices that support both touchscreen and mouse.
+
 # 0.6.8 - Header Improvements
 - Reduced header size
 - Landing page button now blurs
@@ -14,7 +19,7 @@ Changes in the repository not influencing the actual application e.g. Issue Temp
 
 The header was just to big for smaller devices. I created an iconButton component which both header buttons now use. With this the header size got reduced and also the landing page button blurs.
 
-# 0.6.7 - Icon Scroll fix
+# 0.6.7 - Icon Scroll Fix
 - Fixed issues with the scrolling icons
 - Decreased padding top for landing and auth pages
 - Decreased overall text sizes
@@ -76,7 +81,7 @@ Huge credits to [this](https://www.youtube.com/watch?v=Z3bie08QGnQ) Youtube vide
 
 This one is all about that legal stuff. German/EU laws are good but annoying to implement. I basically added a legal page and a layout with links to said page and to the landing page. This made some UI issues surfaces that needed to be adressed. Additionally, I removed the Rubik font as it is a Google Font. There is so much contradicting information out there whether it is legal (in terms of the DSGVO) to use Google Fonts or not that I decided to remove the Rubik font for now. To end on somewhat of a good note, I added the first version of the TTRPG Suite icon. What a piece of art. I know.
 
-## 0.5.0 - I18n implementation
+## 0.5.0 - I18n Implementation
 - Implemented i18n module
 - Added English translation
 - Added German translation
@@ -86,7 +91,7 @@ Translation are now implemented properly. No more hardcoded text. Similar to the
 
 P.S. Can I say that I'm proud of how it was implemented? The fact that these are typescript files and not json files makes this so much more bearable. Additionally, I now know instantly whether I missed a translation.
 
-## 0.4.0 - Account creation
+## 0.4.0 - Account Creation
 - Added Supabase Module - https://nuxt.com/modules/supabase
 - Updated theme logic and variables
 - Created landing page
