@@ -66,11 +66,18 @@ button
   background-color: v-bind("asCssValue(backgroundColor)")
   color: v-bind("asCssValue(color)")
 
-  &:hover, &:active, &:focus
+  &:active, &:focus
     text-decoration: none
 
     background-color: v-bind("asCssValue(backgroundColorHover)")
     color: v-bind("asCssValue(colorHover)")
+
+  @media (hover: hover)
+    &:hover
+      text-decoration: none
+
+      background-color: v-bind("asCssValue(backgroundColorHover)")
+      color: v-bind("asCssValue(colorHover)")
 
   &:disabled
     opacity: 80%
