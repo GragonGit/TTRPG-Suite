@@ -1,6 +1,15 @@
 import type { I18n } from "../i18n";
 
 export const en: I18n = {
+  components: {
+    main: {
+      cookieBanner: {
+        text: "This website uses cookies. All cookies are essential to the website and no non-essential cookies are used.",
+        accept: "Accept",
+        decline: "Decline"
+      }
+    }
+  },
   layouts: {
     auth: {
       legal: "Legal"

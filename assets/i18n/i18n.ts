@@ -1,4 +1,13 @@
 export type I18n = {
+  components: {
+    main: {
+      cookieBanner: {
+        text: string,
+        accept: string,
+        decline: string
+      }
+    }
+  },
   layouts: {
     auth: {
       legal: string,
