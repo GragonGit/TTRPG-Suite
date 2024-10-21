@@ -1,7 +1,8 @@
 <template>
-<NuxtLayout>
-  <NuxtPage />
-</NuxtLayout>
+  <MainCookieBanner />
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
 
 <script lang="ts" setup>

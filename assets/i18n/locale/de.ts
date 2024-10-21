@@ -1,6 +1,15 @@
 import type { I18n } from "../i18n";
 
 export const de: I18n = {
+  components: {
+    main: {
+      cookieBanner: {
+        text: "Diese Website verwendet Cookies. Alle Cookies werden für die Website benötigt und es werden keine nicht-essentiellen Cookies verwendet.",
+        accept: "Akzeptieren",
+        decline: "Ablehnen"
+      }
+    }
+  },
   layouts: {
     auth: {
       legal: "Impressum"
