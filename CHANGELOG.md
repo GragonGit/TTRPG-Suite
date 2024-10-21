@@ -6,6 +6,13 @@ Welcome to the Changelog. The versioning works as follows:
 
 Changes in the repository not influencing the actual application e.g. Issue Templates do not require a version change.
 
+# 0.6.10 - Cookie Banner
+- Added cookie banner
+- Changed order of log in and sign in buttons
+- Updated dependencies
+
+Added a cookie banner because laws... Not much else to say here really. Also changed log in and sign in button order because it looks better and has better UX.
+
 # 0.6.9 - Hover Media Query
 - Added touchscreen media query to iconButton
 
