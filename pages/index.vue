@@ -14,6 +14,7 @@
   <div class="buttons">
     <NuxtLink class="outlinedAccentButton" to="/auth/signup">{{ $t('landing.signup') }}</NuxtLink>
     <NuxtLink class="filledAccentButton" to="/auth/login">{{ $t('landing.login') }}</NuxtLink>
+    <button class="filledAccentButton" @click="sendNotification">Push</button>
   </div>
 </section>
 </template>
@@ -22,6 +23,23 @@
 definePageMeta({
   layout: 'thin'
 })
+
+const {
+  isSupported,
+  show,
+} = useWebNotification({
+  title: 'Hello, VueUse world!',
+  dir: 'auto',
+  lang: 'en',
+  renotify: true,
+  tag: 'test',
+})
+
+
+const sendNotification = () => {
+  if (isSupported.value)
+    show()
+}
 </script>
 
 <style lang="sass" scoped>
